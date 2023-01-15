@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(216, 216, 197);
+}
+
+.navbar {
+    width: 100%;
+    height: 8rem;
+    background-color: rgb(36, 26, 140);
+}
+
+.navbar .nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.navbar .nav-container .navitem {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.navbar .nav-container .navitem .nav-logo {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.navbar .nav-container .navitem .nav-logo i {
+    color: rgb(140, 97, 141);
+}
+
+.navbar .nav-container .navitem #nav-btn {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 0.3em 0.8em;
+    color: rgb(211, 174, 174);
+    background-color: rgb(47, 27, 47);
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.navbar .nav-container .navitem #nav-btn:hover {
+    background-color: rgb(152, 113, 152);
+}
+
+.search-bar {
+    background-color: rgb(167, 199, 207);
+    width: 100%;
+    height: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.search-bar .sr-con {
+    width: 60rem;
+    height: 5rem;
+    border: 2px solid rgb(191, 233, 227);
+    padding: 0 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.search-bar .sr-con #sr-bar {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    font-size: 2rem;
+    color: rgb(171, 164, 213);
+    border: none;
+}
+
+.search-bar .sr-con #sr-bar::-webkit-input-placeholder {
+    color: rgba(41, 40, 105, 0.486);
+}
+
+.search-bar .sr-con #sr-bar:-ms-input-placeholder {
+    color: rgba(195, 182, 182, 0.486);
+}
+
+.search-bar .sr-con #sr-bar::-ms-input-placeholder {
+    color: rgba(164, 140, 192, 0.486);
+}
+
+.search-bar .sr-con #sr-bar::placeholder {
+    color: rgba(34, 129, 58, 0.486);
+}
+
+.search-bar .sr-con i {
+    color: rgb(122, 99, 61);
+    font-size: 2.5rem;
+}
+
+#display {
+    padding: 2rem 0;
+}
+
+#display .display-con {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#display .display-con #box {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#display .display-con #box .load {
+    position: fixed;
+    left: 45%;
+    margin: auto;
+    color: rgb(35, 108, 156);
+    font-size: 2rem;
+    width: 7ch;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-animation: text 5s ease-in-out forwards infinite;
+    animation: text 5s ease-in-out forwards infinite;
+}
+
+@-webkit-keyframes text {
+    0% {
+        width: 7ch;
+    }
+    25% {
+        width: 9ch;
+    }
+    50% {
+        width: 7ch;
+    }
+    75% {
+        width: 9ch;
+    }
+}
+
+@keyframes text {
+    0% {
+        width: 7ch;
+    }
+    25% {
+        width: 9ch;
+    }
+    50% {
+        width: 7ch;
+    }
+    75% {
+        width: 9ch;
+    }
+}
+
+#display .display-con #box li {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(202, 227, 225, 0.322);
+    width: 24rem;
+    height: 30rem;
+    border-radius: 5rem;
+    margin: 5.5rem;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.151) 0px 8px 16px, rgba(0, 0, 0, 0.151) 0px 16px 32px, rgba(0, 0, 0, 0.151) 0px 32px 64px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.151) 0px 8px 16px, rgba(0, 0, 0, 0.151) 0px 16px 32px, rgba(0, 0, 0, 0.151) 0px 32px 64px;
+}
+
+#display .display-con #box li:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+#display .display-con #box li .img {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: rgba(28, 28, 160, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(47, 47, 202, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#display .display-con #box li .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+
+#display .display-con #box li h2 {
+    margin: 2rem 0 0.5rem 0;
+    text-transform: capitalize;
+}
+
+#display .display-con #box li i {
+    font-size: 3rem;
+    color: rgb(227, 225, 225);
+    margin-top: 1rem;
+}
